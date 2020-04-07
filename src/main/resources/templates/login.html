@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Labo2 </title>
+</head>
+<body>
+<h1>Iniciar sesion</h1>
+<form action="#" th:action="@{/validacion}" th:object="${usuario}" method="post">
+    <p>
+        Nombre: <input type="text" th:field="*{nombre}">
+    </p>
+    <p>
+        Contrasena: <input type="password" th:field="*{contrasena}">
+    </p>
+    <p>
+        <input type="submit" value="Enviar"/><input type="reset" value="Borrar"/>
+
+    </p>
+</form>
+
+</body>
+</html>
